@@ -30,10 +30,29 @@
       <br>
       <br>
       
-      Glazing:
+      <!-- drop-down code adapted from https://www.w3schools.com/tags/tag_select.asp-->
+      <label for="glazing">Glazing</label>
+      <br>
+      <select name="glazing" id=""glazing">
+        <option value="orginal">Keep original</option>
+        <option value="sugar">Sugar Milk</option>
+        <option value="vanilla">Vanilla milk</option>
+        <option value="chocolate">Double chocolate</option>
+      </select>
       <br>
 
-      </a>
+      <label for="size">Pack size</label>
+      <br>
+      <select name="size" id=""size">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+      </select>
+      
 
       <br>
       <br>
+
+      <b>$2.49</b>
+      <button onclick="cart.html">Add to cart</button>
