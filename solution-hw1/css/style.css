@@ -14,14 +14,24 @@ a {
     display: inline-block;
     text-align: left;
     margin-bottom: 60px;
-    padding: 5px 5px
+    padding: 5px 5px;
 }
 
 a:hover {
     background-color: yellow;
-    font-weight: bold;
+    font-weight: 900;
     text-decoration: none;
     color: black;
+}
+
+.logo {
+    border: 0px;
+    text-align:left;
+}
+
+.logo:hover {
+    background-color:white;
+    font-weight:initial;
 }
 
 .products, .cart{
@@ -51,10 +61,12 @@ h3 {
     font-size: 14px;
     font-family: 'roboto';
     font-weight: lighter;
+    margin: 1px;
 }
 
 h4 {
     font-size: 14px;
     font-family: 'roboto';
     font-weight: bold;
+    display: inline;
 }
