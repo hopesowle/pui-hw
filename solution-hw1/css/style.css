@@ -26,7 +26,8 @@ a:hover {
 
 .logo {
     border: 0px;
-    text-align:left;
+    text-align: left;
+    display:block
 }
 
 .logo:hover {
