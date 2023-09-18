@@ -26,10 +26,24 @@ a {
     align-items: center;
 }
 
+.drowone{
+    display: flex;
+    float:right;
+    margin-top: 50px;
+    text-align: left;
+
+} 
+
+.drowtwo, .drowthree, .drowfour{
+    display: flex;
+    align-items: right;
+    float: right;
+}
+
 .boxone, .boxtwo, .boxthree {
     margin: auto;
-
 }
+
 
 .logo{
     height: 285px;
