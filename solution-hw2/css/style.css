@@ -42,6 +42,8 @@ a {
     height: 285px;
     margin: 10px;
     float: left;
+    margin-top: -25px;
+    margin-bottom: 50px;
 }
 
 .page-header{
