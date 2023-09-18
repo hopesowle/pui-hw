@@ -18,12 +18,13 @@ a {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .rowone, .rowtwo {
     display: flex;
     justify-content: space-between;
+
 }
 
 .boxone, .boxtwo, .boxthree {
@@ -38,22 +39,31 @@ header{
 
 .logo{
     height: 285px;
-    margin: 0 20px;
+    margin: 10px;
+}
+
+.page-header{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    text-align: center;
+    font-size: 30px
 }
 
 nav {
     margin: auto;
+    float: right;
 }
 
 nav ul {
     list-style: none;
-    display: inline-block;
     display: flex;
 }
 
-nav a{
+nav ul li a{
     text-decoration: none;
     margin: 40px;
+    text-align: right;
     float: right;
 }
 
@@ -88,7 +98,9 @@ a:hover {
 .products, .cart{
     text-transform: uppercase;
     border: none;
-    margin-bottom: 6px;
+    margin-top: -25px;
+    margin-bottom: -50px;
+    float: right;
 }
 
 .cartimg {
