@@ -21,21 +21,22 @@ a {
     margin: 0;
 }
 
-.rowone, .rowtwo {
+.rowone, .rowtwo, header {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .boxone, .boxtwo, .boxthree {
     margin: auto;
 }
 
-header{
+/*header{
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
+}*/
 
 .logo{
     height: 285px;
@@ -69,6 +70,7 @@ nav ul li a{
 }
 
 hr {
+    flex-grow: 1;
     height: 2px;
     background-color: black;
     margin: 20px;
