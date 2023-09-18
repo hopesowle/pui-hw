@@ -27,17 +27,9 @@ a {
     padding: 0 0 0 0;
 }
 
-.boxone{
-    margin-left: 115px;
-}
+.boxone, .boxtwo, .boxthree {
+    margin: auto;
 
-.boxtwo {
-    margin-left: 57.5px;
-    margin-right: 57.5px;
-}
-
-.boxthree {
-    margin-right: 115px;
 }
 
 .logo{
@@ -55,14 +47,13 @@ a {
 }
 
 nav {
-    margin-left: 500px;
+    margin-left: 450px;
     float: right;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    font-size: 20px;
 }
 
 nav ul li a{
@@ -73,7 +64,7 @@ nav ul li a{
 }
 
 hr {
-    margin-right: -20px;
+    margin-right: 0px;
     margin-left: 20px;
 }
 
