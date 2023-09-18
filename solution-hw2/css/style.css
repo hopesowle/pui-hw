@@ -40,37 +40,38 @@ header{
 .logo{
     height: 285px;
     margin: 10px;
+    float: left;
 }
 
 .page-header{
     margin-top: 50px;
     margin-left: 20px;
     display: flex;
-    text-align: left;
-    float: left;
+    text-align: center;
     font-size: 30px
 }
 
 nav {
-    margin-left: 600px;
+    margin: auto;
     float: right;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    float: right;
 }
 
 nav ul li a{
     text-decoration: none;
     margin: 40px;
+    text-align: right;
+    float: right;
 }
 
 hr {
     height: 2px;
     background-color: black;
-    margin-left: 20px;
+    margin: 20px;
 }
 
 .prod{
