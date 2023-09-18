@@ -7,6 +7,13 @@ body {
     text-align: center;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
 .header-text p {
     font-size: 16px;
 }
@@ -16,14 +23,27 @@ body {
     align-items: center;
 }
 
-.header-container img {
-    height: 285px;
+.logo-nav img {
+    max-width: 285px;
+    height: auto;
     margin-right: 10px;
     border: 0;
 }
 
-nav a{
-   float: right; 
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px;
+    float: right;
+}
+
+.hr-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: black;
 }
 
 a {
