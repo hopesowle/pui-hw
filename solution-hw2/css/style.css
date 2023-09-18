@@ -18,7 +18,7 @@ a {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0;
+    margin: 20 0 0 20;
 }
 
 .rowone, .rowtwo, header {
@@ -30,13 +30,6 @@ a {
 .boxone, .boxtwo, .boxthree {
     margin: auto;
 }
-
-/*header{
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-}*/
 
 .logo{
     height: 285px;
@@ -70,7 +63,7 @@ nav ul li a{
 }
 
 hr {
-    padding: 0 0 0 0;
+    margin-right: -20px;
     margin-left: 20px;
 }
 
