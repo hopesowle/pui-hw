@@ -46,17 +46,18 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 10px;
+    list-style: none;
+    display: inline-block;
     display: flex;
 }
 
-nav ul li a{
+nav a{
+    text-decoration: none;
     margin: 40px;
     float: right;
 }
-.hr-line{
-    flex-grow: 1;
+
+hr {
     height: 2px;
     background-color: black;
     margin: 20px;
