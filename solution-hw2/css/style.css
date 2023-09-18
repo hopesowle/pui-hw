@@ -27,8 +27,17 @@ a {
     padding: 0 0 0 0;
 }
 
-.boxone, .boxtwo, .boxthree {
-    margin: auto;
+.boxone{
+    margin-left: 115px;
+}
+
+.boxtwo {
+    margin-left: 57.5px;
+    margin-right: 57.5px;
+}
+
+.boxthree {
+    margin-right: 115px;
 }
 
 .logo{
