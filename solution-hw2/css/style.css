@@ -18,11 +18,12 @@ a {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 20 0 0 20;
+    margin: 20px 0px 0px 20px;
 }
 
 .detail-description {
     float: right;
+    margin: auto;
 }
 
 .rowone, .rowtwo, header {
@@ -34,11 +35,17 @@ a {
 .col{
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    flex-basis: 100%;
 }
 
 .boxone, .boxtwo, .boxthree {
@@ -61,6 +68,9 @@ a {
     font-size: 30px;
 }
 
+.price-cart{
+    text-align: right;
+}
 nav {
     margin-left: 450px;
     float: right;
