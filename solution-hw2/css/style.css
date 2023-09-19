@@ -34,14 +34,11 @@ a {
 .col{
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
 }
-.row{
-    display: float;
+
+.row {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: left;
 }
 
 .boxone, .boxtwo, .boxthree {
