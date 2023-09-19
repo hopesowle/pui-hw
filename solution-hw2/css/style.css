@@ -21,23 +21,27 @@ a {
     margin: 20 0 0 20;
 }
 
+.detail-description {
+    float: right;
+}
+
 .rowone, .rowtwo, header {
     display: flex;
     align-items: center;
+    flex-basis: 100%
 }
 
-.drowone{
+.col{
     display: flex;
-    float:right;
-    margin-top: 50px;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+.row{
+    display: float;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     text-align: left;
-
-} 
-
-.drowtwo, .drowthree, .drowfour{
-    display: flex;
-    align-items: right;
-    float: right;
 }
 
 .boxone, .boxtwo, .boxthree {
