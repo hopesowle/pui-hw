@@ -124,11 +124,18 @@ a:hover {
     margin-bottom: -50px;
     float: right;
 }
+.cartimg{
+    margin-left: 350px;
+    margin-right: 50px;
+}
 
-.cartimg {
-    border: 2px solid black;
-    margin-bottom: 10px;
-    padding: 0px;
+.cartitem, .cartglaze {
+    margin-top: 50px;
+}
+
+.cartszie{
+    margin-top: 50px;
+    margin-bottom: 300px;
 }
 
 hr {
