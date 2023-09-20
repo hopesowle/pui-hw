@@ -39,6 +39,7 @@ a {
     flex-direction: row;
     align-items: center;
     flex-basis: 100%;
+    width: 100%;
 }
 
 .detail-description, .glazing, .pack-size{
@@ -134,7 +135,7 @@ a:hover {
 }
 
 .cartsize{
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 
 hr {
