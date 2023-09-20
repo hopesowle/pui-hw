@@ -170,7 +170,6 @@ h3 {
     font-family: 'roboto';
     font-weight: lighter;
     margin: 0px;
-    margin-left:100px;
 }
 
 .checkprice{
@@ -193,4 +192,8 @@ h5 {
     text-align: left;
     margin-top: -30px;
     margin-left: 350px;
+}
+
+h6 {
+    margin-left: 100px;
 }
