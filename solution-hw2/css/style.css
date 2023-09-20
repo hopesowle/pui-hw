@@ -94,6 +94,8 @@ nav ul li a{
 hr {
     margin-right: -16px;
     margin-left: 20px;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .prod{
@@ -138,9 +140,13 @@ a:hover {
     margin-bottom: 150px;
 }
 
-hr {
-    border-style: solid;
-    border-width: 2px;
+.checkprice{
+    text-decoration: none;
+    margin-left: 700px;
+}
+
+hr2 {
+    margin-left: 350px;
 }
 
 h1 {
