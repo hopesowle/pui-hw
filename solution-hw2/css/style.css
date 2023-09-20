@@ -161,17 +161,17 @@ h2 {
     margin: 0px;
 }
 
-.checkprice{
-    text-decoration: none;
-    margin-left: 688px;
-    display: flex;
-}
-
 h3 {
     font-size: 18px;
     font-family: 'roboto';
     font-weight: lighter;
     margin: 0px;
+}
+
+.checkprice{
+    text-decoration: none;
+    margin-left: 688px;
+    display: flex;
 }
 
 h4 {
@@ -185,7 +185,9 @@ h5 {
     font-size: 24px;
     text-decoration: bold;
     text-decoration: underline;
-    margin-left: 250px;
+    text-align: left;
+    margin-top: -30px;
+    margin-left: 350px;
 }
 .button {
     margin-left: 900px;
