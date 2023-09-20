@@ -130,11 +130,10 @@ a:hover {
 }
 
 .cartitem, .cartglaze {
-    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
-.cartszie{
-    margin-top: 50px;
+.cartsize{
     margin-bottom: 300px;
 }
 
