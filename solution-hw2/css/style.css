@@ -36,10 +36,12 @@ a {
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 100%
 }
 
 .row {
     display: flex;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     margin-top: 50px;
@@ -69,8 +71,9 @@ a {
 }
 
 .price-cart{
-    text-align: right;
+    margin-left: 100px;
 }
+
 nav {
     margin-left: 450px;
     float: right;
