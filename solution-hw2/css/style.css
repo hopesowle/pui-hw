@@ -140,14 +140,6 @@ a:hover {
     margin-bottom: 150px;
 }
 
-.checkprice{
-    text-decoration: none;
-    margin-left: 700px;
-}
-
-hr2 {
-    margin-left: 350px;
-}
 
 h1 {
     font-size: 40px;
@@ -161,6 +153,12 @@ h2 {
     font-family: 'roboto';
     font-weight: lighter;
     margin: 0px;
+}
+
+.checkprice{
+    text-decoration: none;
+    margin-left: 688px;
+    display: flex;
 }
 
 h3 {
