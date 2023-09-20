@@ -21,10 +21,6 @@ a {
     margin: 20px 0px 0px 20px;
 }
 
-.detail-description {
-    float: right;
-    margin: auto;
-}
 
 .rowone, .rowtwo, header {
     display: flex;
@@ -36,18 +32,19 @@ a {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 100%
 }
 
 .row {
     display: flex;
-    width: 100%;
     flex-direction: row;
     align-items: center;
+    flex-basis: 100%;
+}
+
+.detail-description, .glazing, .pack-size{
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 50px;
-    flex-basis: 100%;
 }
 
 .boxone, .boxtwo, .boxthree {
@@ -72,6 +69,8 @@ a {
 
 .price-cart{
     margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 nav {
