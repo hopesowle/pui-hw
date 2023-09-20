@@ -137,6 +137,9 @@ a:hover {
     margin-left: 250px;
     margin-right: 50px;
 }
+.cartimg:hover{
+    background-color:white;
+}
 
 .cartitem, .cartglaze {
     margin-bottom: 25px;
