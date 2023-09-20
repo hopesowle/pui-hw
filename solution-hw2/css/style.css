@@ -98,10 +98,6 @@ hr {
     border-width: 2px;
 }
 
-.prod{
-    border: 2px solid black;
-    margin-left: 100px;
-}
 
 a:hover {
     background-color: yellow;
@@ -119,6 +115,15 @@ a:hover {
 .logo:hover {
     background-color:white;
     font-weight:initial;
+}
+
+.prod{
+    border: 2px solid black;
+    margin-left: 100px;
+}
+
+.prod:hover{
+    background-color:white;
 }
 
 .products, .cart{
