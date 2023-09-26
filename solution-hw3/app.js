@@ -1,6 +1,8 @@
 var price = document.getElementById('roll-price');
-var fPrice = 2.49;
-price.innerText = fPrice;
+var basePrice = 2.49;
+var gPrice = 0;
+var pPrice = 1;
+price.innerText = basePrice;
 
 let allGlazes = [
     {
@@ -30,10 +32,14 @@ for (var i = 0; i < allGlazes.length; i++){
     glazeSelect.add(gOption);
 }
 
+function updatePrice() {
+    const finalPrice = Math.round(100 * (parseFloat(basePrice) + parseFloat(gPrice) * pPrice)) / 100;
+    price.innerText = finalPrice;
+}
+
 function glazingChange(element) {
-    const gPriceChange = element.value;
-    fPrice = parseFloat(fPrice) + parseFloat(gPriceChange);
-    price.innerText = fPrice;
+    gPrice = element.value;
+    updatePrice();
 }
 
 let allPacks = [
@@ -65,7 +71,6 @@ for (var j = 0; j < allPacks.length; j++){
 }
 
 function packChange(element) {
-    const pPriceChange = element.value;
-    fPrice = parseFloat(fPrice) * parseInt(pPriceChange);
-    price.innerText = fPrice;
+    pPrice = element.value;
+    updatePrice();
 }
