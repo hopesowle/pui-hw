@@ -32,7 +32,7 @@ for (var i = 0; i < allGlazes.length; i++){
 
 function glazingChange(element) {
     const gPriceChange = element.value;
-    const gPrice = basePrice + gPriceChange
+    var gPrice = basePrice + gPriceChange
     price.innerText = gPrice;
 }
 
@@ -69,8 +69,5 @@ function onSelectPackChange() {
 
     let packToDisplay = allPacks[packIndex].size;
     packPrice = allPacks[packIndex].price;
-
-    displayPack(packToDisplay);
 }
 
-displayPack(allPacks[0]);
