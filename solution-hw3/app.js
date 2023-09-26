@@ -34,28 +34,23 @@ function onSelectGlazeChange() {
     displayGlaze(glazeToDisplay);
 }
 
-let selectGlazeElement = document.querySelector('glaze-select');
-
-selectGlazeElement.addEventListener('change', onSelectGlazeChange);
-
 displayGlaze(allGlazes[0]);
-
 
 let allPacks = [
     {
-        size: 1,
+        size: '1',
         price: 1,
     },
     {
-        size: 3,
+        size: '3',
         price: 3,
     },
     {
-        size: 6,
+        size: '6',
         price: 5,
     },
     {
-        size: 12,
+        size: '12',
         price: 10,
     },
 ];
@@ -76,9 +71,5 @@ function onSelectPackChange() {
 
     displayPack(packToDisplay);
 }
-
-let selectPackElement = document.querySelector('pack-select');
-
-selectPackElement.addEventListener('change', onSelectPackChange);
 
 displayPack(allPacks[0]);
