@@ -1,4 +1,4 @@
-var price = document.querySelector('#roll-price');
+var price = document.getElementById('roll-price');
 var basePrice = 2.49;
 price.textContent = basePrice;
 
@@ -30,10 +30,9 @@ for (var i = 0; i < allGlazes.length; i++){
     glazeSelect.add(gOption);
 }
 
-// partially based on in-lab-example / puinote-lab04 -> https://github.com/interactive-structures/pui-materials/blob/main/in-lab-examples/puinote-lab04/select-example/app.js
 function glazingChange(element) {
     const gPriceChange = element.value;
-    price.innerHTML = (basePrice + gPriceChange);
+    price.textContent = (basePrice + gPriceChange);
 }
 
 let allPacks = [
