@@ -1,17 +1,17 @@
 var price = document.getElementById('roll-price');
 var basePrice = 2.49;
-var gPrice = 0;
-var pPrice = 1;
+var gPrice = 0.00;
+var pPrice = 1.00;
 price.innerText = basePrice;
 
 let allGlazes = [
     {
         type: 'Keep original',
-        price: 0,
+        price: 0.00,
     },
     {
         type: 'Sugar milk',
-        price: 0,
+        price: 0.00,
     },
     {
         type: 'Vanilla milk',
@@ -30,16 +30,6 @@ for (var i = 0; i < allGlazes.length; i++){
     gOption.text = allGlazes[i].type;
     gOption.value = allGlazes[i].price;
     glazeSelect.add(gOption);
-}
-
-function updatePrice() {
-    const finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
-    price.innerText = Math.round(100 * finalPrice) / 100;
-}
-
-function glazingChange(element) {
-    gPrice = element.value;
-    updatePrice();
 }
 
 let allPacks = [
@@ -68,6 +58,16 @@ for (var j = 0; j < allPacks.length; j++){
     pOption.text = allPacks[j].size;
     pOption.value = allPacks[j].price;
     packSelect.add(pOption);
+}
+
+function updatePrice() {
+    var finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
+    price.innerText = Math.round(100 * finalPrice) / 100;
+}
+
+function glazingChange(element) {
+    gPrice = element.value;
+    updatePrice();
 }
 
 function packChange(element) {
