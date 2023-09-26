@@ -32,7 +32,7 @@ for (var i = 0; i < allGlazes.length; i++){
 
 function glazingChange(element) {
     const gPriceChange = element.value;
-    var gPrice = parsInt(basePrice + parsInt(gPriceChange));
+    var gPrice = parsInt(basePrice + gPriceChange);
     price.innerText = gPrice;
 }
 
