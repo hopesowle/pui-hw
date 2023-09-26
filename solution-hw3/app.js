@@ -34,8 +34,6 @@ function onSelectGlazeChange() {
     displayGlaze(glazeToDisplay);
 }
 
-displayGlaze(allGlazes[0]);
-
 let allPacks = [
     {
         size: '1',
