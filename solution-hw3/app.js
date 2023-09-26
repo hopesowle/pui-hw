@@ -1,5 +1,5 @@
-const price = document.querySelector('#roll-price');
-const basePrice = 2.49;
+var price = document.querySelector('#roll-price');
+var basePrice = 2.49;
 price.textContent = basePrice;
 
 let allGlazes = [
@@ -31,10 +31,9 @@ for (var i = 0; i < allGlazes.length; i++){
 }
 
 // partially based on in-lab-example / puinote-lab04 -> https://github.com/interactive-structures/pui-materials/blob/main/in-lab-examples/puinote-lab04/select-example/app.js
-function onSelectGlazeChange() {
-    let gIndex = parseInt(this.value);
-    let gPriceChange = allGlazes[gIndex].price;
-    price.textContent = (basePrice + gPriceChange);
+function glazingChange(element) {
+    const gPriceChange = element.value;
+    price.innerHTML = (basePrice + gPriceChange);
 }
 
 let allPacks = [
