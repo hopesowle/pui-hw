@@ -1,5 +1,6 @@
 var price = document.getElementById('roll-price');
 var basePrice = 2.49;
+var gPrice = basePrice;
 price.innerText = basePrice;
 
 let allGlazes = [
@@ -32,7 +33,7 @@ for (var i = 0; i < allGlazes.length; i++){
 
 function glazingChange(element) {
     const gPriceChange = element.value;
-    var gPrice = basePrice + gPriceChange;
+    gPrice = parseFloat(basePrice) + parseFloat(gPriceChange);
     price.innerText = gPrice;
 }
 
@@ -64,10 +65,8 @@ for (var j = 0; j < allPacks.length; j++){
     packSelect.add(pOption);
 }
 
-function onSelectPackChange() {
-    let packIndex = parseInt(this.value);
-
-    let packToDisplay = allPacks[packIndex].size;
-    packPrice = allPacks[packIndex].price;
+function glazingChange(element) {
+    const pPriceChange = element.value;
+    const pPrice = parseFloat(gPrice) * parseFloat(pPriceChange);
+    price.innerText = pPrice;
 }
-
