@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+    <title>Product Detail page</title>
+    <script defer src="app.js"></script>
+  </head>
+  
+  <body>
+    <header>
+      <a href = "index.html" class = "logo">
+        <img src = "../assets/logo/logo-01.svg" height = "400px" width = "400px"/>
+      </a>
+
+      <div class="container">
+        <div class="rowone">
+          <nav>
+            <ul>
+              <li><a href = "index.html" class = "products"> PRODUCTS</a></li>
+              <li><a href = "cart.html" class = "cart"> CART </a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <hr>
+  
+        <div class="page-header">
+          Original cinnamon roll
+        </div>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="row">
+        <img class = "prod" src = "../assets/products/original-cinnamon-roll.jpg" height = "600px" width = "600px" />
+      <div class ="col">
+        <div class ="row">
+          <div class="detail-description">
+            <h3>Customize our delicious,</h3>
+            <h3> handmade cinnamon roll to </h3>
+            <h3>your liking!</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="glazing">
+            <label for="glazing">Glazing</label>
+            <br>
+            <select name="glazing" id="glaze-select">
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="pack-size">
+            <label for="size">Pack size</label>
+            <br>
+            <select name="pack" id="pack-select">
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="price-cart">
+            <h4 id="roll-price">none</h4>
+            <a href = "cart.html" class = "button"> Add to cart </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body> 
+</html>    
+      
+      
