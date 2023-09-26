@@ -33,7 +33,7 @@ for (var i = 0; i < allGlazes.length; i++){
 }
 
 function updatePrice() {
-    const finalPrice = parseFloat(basePrice) + parseFloat(gPrice) * pPrice;
+    const finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
     price.innerText = Math.round(100 * finalPrice) / 100;
 }
 
