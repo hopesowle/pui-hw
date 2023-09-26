@@ -1,5 +1,5 @@
 var price = document.getElementById('roll-price');
-const fPrice = 2.49;
+var fPrice = 2.49;
 price.innerText = fPrice;
 
 let allGlazes = [
