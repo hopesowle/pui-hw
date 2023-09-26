@@ -33,8 +33,8 @@ for (var i = 0; i < allGlazes.length; i++){
 }
 
 function updatePrice() {
-    const finalPrice = Math.round(100 * (parseFloat(basePrice) + parseFloat(gPrice) * pPrice)) / 100;
-    price.innerText = finalPrice;
+    const finalPrice = parseFloat(basePrice) + parseFloat(gPrice) * pPrice;
+    price.innerText = Math.round(100 * finalPrice) / 100;
 }
 
 function glazingChange(element) {
