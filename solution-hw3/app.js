@@ -1,6 +1,6 @@
 var price = document.getElementById('roll-price');
 var basePrice = 2.49;
-price.textContent = basePrice;
+price.innerText = basePrice;
 
 let allGlazes = [
     {
@@ -32,7 +32,8 @@ for (var i = 0; i < allGlazes.length; i++){
 
 function glazingChange(element) {
     const gPriceChange = element.value;
-    price.textContent = (basePrice + gPriceChange);
+    const gPrice = basePrice + gPriceChange
+    price.innerText = gPrice;
 }
 
 let allPacks = [
