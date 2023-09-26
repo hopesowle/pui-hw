@@ -1,3 +1,8 @@
+// const price = 2.49;
+// const glazingPrice = 0;
+// const packPrice = 1;
+// const finalPrice = (basePrice + glazingPrice) * packPrice;
+
 let allGlazes = [
     {
         type: 'Keep original',
@@ -26,12 +31,13 @@ for (var i = 0; i < allGlazes.length; i++){
     glazeSelect.add(gOption);
 }
 
+// based on in-lab-example / puinote-lab04 -> https://github.com/interactive-structures/pui-materials/blob/main/in-lab-examples/puinote-lab04/select-example/app.js
 function onSelectGlazeChange() {
+    let glazingPrice = document.querySelector('#roll-price')
+    
     let glazeIndex = parseInt(this.value);
 
-    let glazeToDisplay = allGlazes[glazeIndex].type;
-
-    displayGlaze(glazeToDisplay);
+    glazingPrice.innerText = 2.49 + allGlazes[glazeIndex].price;
 }
 
 let allPacks = [
@@ -66,6 +72,7 @@ function onSelectPackChange() {
     let packIndex = parseInt(this.value);
 
     let packToDisplay = allPacks[packIndex].size;
+    packPrice = allPacks[packIndex].price;
 
     displayPack(packToDisplay);
 }
