@@ -65,7 +65,7 @@ for (var j = 0; j < allPacks.length; j++){
     packSelect.add(pOption);
 }
 
-function glazingChange(element) {
+function packChange(element) {
     const pPriceChange = element.value;
     const pPrice = parseFloat(gPrice) * parseFloat(pPriceChange);
     price.innerText = pPrice;
