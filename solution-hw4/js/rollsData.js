@@ -115,7 +115,14 @@ for (var j = 0; j < allPacks.length; j++){
 }
 
 function updatePrice() {
+    //CHECKS
+    console.log(parseFloat(basePrice));
+    console.log(parseFloat(gPrice));
+    console.log(parseInt(pPrice));
+
     var finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
+    //CHECK
+    console.log(finalPrice);
     rollPrice.innerText = Math.round(100 * finalPrice) / 100;
 }
 
