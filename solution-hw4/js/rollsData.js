@@ -116,7 +116,7 @@ for (var j = 0; j < allPacks.length; j++){
 
 function updatePrice() {
     var finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
-    price.innerText = Math.round(100 * finalPrice) / 100;
+    rollPrice.innerText = Math.round(100 * finalPrice) / 100;
 }
 
 function glazingChange(element) {
