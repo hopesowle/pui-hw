@@ -38,14 +38,14 @@ console.log(rollType);
 const headerElement = document.querySelector('#roll-header-text');
 headerElement.innerText = rollType + 'Cinnamon Roll';
 
-console.log(rollType + 'Cinnamon Roll');
+console.log(rollType + ' Cinnamon Roll');
 
 //price
 const rollPrice = document.querySelector('#roll-price');
 rollPrice.innerText = rolls.rollType.basePrice;
 
 //pricecheck
-console.log(rolls.rollType.basePrice);
+console.log(rolls.rollType["basePrice"]);
 
 //img
 const rollImage = document.querySelector('#roll-img');
