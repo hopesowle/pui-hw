@@ -57,7 +57,6 @@ console.log(rolls[rollType]["basePrice"]);
 var basePrice = rollPrice;
 var gPrice = 0.00;
 var pPrice = 1.00;
-price.innerText = basePrice;
 
 let allGlazes = [
     {
