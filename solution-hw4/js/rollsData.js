@@ -54,7 +54,7 @@ console.log(rolls[rollType]["basePrice"]);
 
 
 
-let basePrice = rollPrice;
+var basePrice = rolls[rollType]["basePrice"];
 var gPrice = 0.00;
 var pPrice = 1.00;
 
