@@ -45,7 +45,7 @@ const rollImage = document.querySelector('#roll-img');
 rollImage.src = rolls[rollType]["imageFile"];
 
 //price
-const rollPrice = document.querySelector('#roll-price');
+var rollPrice = document.querySelector('#roll-price');
 rollPrice.innerText = rolls[rollType]["basePrice"];
 
 //pricecheck
