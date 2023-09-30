@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+    <title>Product Detail page</title>
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/details.js"></script>
+    <script defer src="./js/rollsData.js"></script>
+  </head>
+  
+  <body>
+    <header>
+      <a href = "index.html" class = "logo">
+        <img src = "../assets/logo/logo-01.svg" height = "400px" width = "400px"/>
+      </a>
+
+      <div class="container">
+        <div class="rowone">
+          <nav>
+            <ul>
+              <li><a href = "index.html" class = "products"> PRODUCTS</a></li>
+              <li><a href = "cart.html" class = "cart"> CART </a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <hr>
+  
+        <h1 id="roll-header-text"></h1>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="row">
+        <img class = "roll-img" src = "" height = "600px" width = "600px" />
+      <div class ="col">
+        <div class ="row">
+          <div class="detail-description">
+            <h3>Customize our delicious,</h3>
+            <h3> handmade cinnamon roll to </h3>
+            <h3>your liking!</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="glazing">
+            <label for="glazing">Glazing</label>
+            <br>
+            <select name="glazing" id="glaze-select" onchange="glazingChange(this)">
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="pack">
+            <label for="pack">Pack size</label>
+            <br>
+            <select name="pack" id="pack-select" onchange="packChange(this)">
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="price-cart">
+            <h4>$</h4>
+            <h4 id="roll-price"></h4>
+            <a href = "cart.html" class = "button"> Add to cart </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body> 
+</html>    
+      
+      
