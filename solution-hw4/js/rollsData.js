@@ -42,13 +42,12 @@ console.log(rollType + ' Cinnamon Roll');
 
 //img
 const rollImage = document.querySelector('#roll-img');
-let imageToPrint = rolls.rollType.imageFile
-rollImage.src = imageToPrint;
+rollImage.src = rolls[rollType]["imageFile"];
 
 //price
 const rollPrice = document.querySelector('#roll-price');
-rollPrice.innerText = rolls.rollType["basePrice"];
+rollPrice.innerText = rolls[rollType]["basePrice"];
 
 //pricecheck
-console.log(rolls.rollType["basePrice"]);
+console.log(rolls[rollType]["basePrice"]);
 
