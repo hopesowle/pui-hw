@@ -25,7 +25,7 @@ const rolls = {
     }    
 };
 
-const cart = {}
+const cart = {};
 
 //roll
 const queryString = window.location.search;
