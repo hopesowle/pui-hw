@@ -32,12 +32,11 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
 
+console.log(rollType);
+
 //header
 const headerElement = document.querySelector('roll-header-text');
 headerElement.innerText = rollType + 'Cinnamon Roll';
-
-//headcheck
-console.log(rollType);
 
 //price
 const rollPrice = document.querySelector('roll-price');
