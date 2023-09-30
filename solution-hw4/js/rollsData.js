@@ -30,7 +30,7 @@ const cart = {}
 //roll
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
-const rollType = params.get("roll");
+const rollType = params.get('roll');
 
 //header
 const headerElement = document.querySelector('roll-header-text');
@@ -47,7 +47,7 @@ rollPrice.innerText = rolls.rollType.basePrice;
 console.log(rolls.rollType.basePrice);
 
 //img
-const rollImage = document.querySelector("#roll-img");
+const rollImage = document.querySelector('#roll-img');
 rollImage.src = rolls.rollType.imageFile;
 
 //imgcheck

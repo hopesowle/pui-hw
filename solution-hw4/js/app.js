@@ -2,7 +2,7 @@ var price = document.getElementById('roll-price');
 var basePrice = price;
 var gPrice = 0.00;
 var pPrice = 1.00;
-price.innerText = basePrice;
+price.innerText = '' + basePrice;
 
 let allGlazes = [
     {
