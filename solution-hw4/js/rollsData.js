@@ -32,13 +32,13 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
 
-console.log(rollType);
+// rollcheck -> console.log(rollType);
 
 //header
 const headerElement = document.querySelector('#roll-header-text');
 headerElement.innerText = rollType + ' Cinnamon Roll';
 
-console.log(rollType + ' Cinnamon Roll');
+// headcheck -> console.log(rollType + ' Cinnamon Roll');
 
 //img
 const rollImage = document.querySelector('#roll-img');
@@ -48,8 +48,7 @@ rollImage.src = rolls[rollType]["imageFile"];
 var rollPrice = document.querySelector('#roll-price');
 rollPrice.innerText = rolls[rollType]["basePrice"];
 
-//pricecheck
-console.log(rolls[rollType]["basePrice"]);
+//pricecheck console.log(rolls[rollType]["basePrice"]);
 
 
 
@@ -115,14 +114,13 @@ for (var j = 0; j < allPacks.length; j++){
 }
 
 function updatePrice() {
-    //CHECKS
+    /* PRICE CHECKS
     console.log(parseFloat(basePrice));
     console.log(parseFloat(gPrice));
-    console.log(parseInt(pPrice));
+    console.log(parseInt(pPrice));*/
 
     var finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
-    //CHECK
-    console.log(finalPrice);
+    //FINAL CHECK console.log(finalPrice);
     rollPrice.innerText = Math.round(100 * finalPrice) / 100;
 }
 
@@ -134,4 +132,20 @@ function glazingChange(element) {
 function packChange(element) {
     pPrice = element.value;
     updatePrice();
+}
+
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+function cartChange() {
+    const roll = [this.type, this.glazing, this.size, this.basePrice];
+    cart.append(roll);
+    console.log(cart);
 }
