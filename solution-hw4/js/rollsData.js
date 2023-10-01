@@ -149,6 +149,7 @@ const roll = new Roll(this.type, this.glazing, this.size, this.basePrice);
 
 function addToCart() {
     cart.append(roll);
+    console.log(cart);
 }
 
 document.getElementById("cartBtn").addEventListener("click", addToCart);
