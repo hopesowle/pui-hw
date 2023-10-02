@@ -135,21 +135,23 @@ function updatePrice() {
     rollPrice.innerText = Math.round(100 * finalPrice) / 100;
 }
 
+var currentRoll = new Roll(rollType, glaze, size, basePrice);
+
 function glazingChange(element) {
     gPrice = element.value;
     glaze = element.text;
+    currentRoll.glazing = glaze;
     updatePrice();
 }
 
 function packChange(element) {
     pPrice = element.value;
     size = element.text;
+    currentRoll.size = size;
     updatePrice();
 }
 
-
 function addToCart() {
-    var currentRoll = new Roll(rollType, glaze, size, basePrice);
     console.log(currentRoll);
     cart.push(currentRoll);
     console.log(cart);
