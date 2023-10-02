@@ -139,17 +139,16 @@ function glazingChange(element) {
     gPrice = element.value;
     glaze = element.text;
     updatePrice();
-    addToCart();
 }
 
 function packChange(element) {
     pPrice = element.value;
     size = element.text;
     updatePrice();
-    addToCart();
 }
 
-var currentRoll = {type: rollType, glazing: glaze, size: size, basePrice: basePrice}
+var currentRoll = new Roll(rollType, glaze, size, basePrice);
+
 function addToCart() {
     console.log(currentRoll);
     cart.append(currentRoll);
