@@ -147,9 +147,9 @@ function packChange(element) {
     updatePrice();
 }
 
-var currentRoll = new Roll(rollType, glaze, size, basePrice);
 
 function addToCart() {
+    var currentRoll = new Roll(rollType, glaze, size, basePrice);
     console.log(currentRoll);
     cart.push(currentRoll);
     console.log(cart);
