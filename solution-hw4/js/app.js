@@ -112,8 +112,9 @@ function updatePrice() {
 var currentRoll = new Roll(rollType, glazeType, packSize, basePrice);
 
 function glazingChange(element) {
+    console.log(element);
     gPrice = element.value;
-    glazeType = element.text;
+    glazeType = element.innerText;
 
     //check prior
     console.log(glazeType);
