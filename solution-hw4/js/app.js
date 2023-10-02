@@ -113,7 +113,7 @@ var currentRoll = new Roll(rollType, glazeType, packSize, basePrice);
 
 function glazingChange(element) {
     gPrice = element.value;
-    glazeType = element.text.toString();
+    glazeType = element.text;
 
     //check prior
     console.log(glazeType);
@@ -129,7 +129,7 @@ function glazingChange(element) {
 
 function packChange(element) {
     pPrice = element.value;
-    packSize = element.text.toString();
+    packSize = element.text;
 
     //check prior
     console.log(packSize);
