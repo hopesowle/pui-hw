@@ -140,7 +140,7 @@ var currentRoll = new Roll(rollType, glaze, size, basePrice);
 function glazingChange(element) {
     gPrice = element.value;
     glaze = element.text;
-    currentRoll.glazing = glaze;
+    currentRoll.rollGlazing = glaze;
     updatePrice();
 }
 
