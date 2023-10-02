@@ -34,7 +34,7 @@ class Roll {
     }
 }
 
-var cart = {};
+const cart = [];
 
 //roll
 const queryString = window.location.search;
@@ -151,7 +151,7 @@ var currentRoll = new Roll(rollType, glaze, size, basePrice);
 
 function addToCart() {
     console.log(currentRoll);
-    cart.append(currentRoll);
+    cart.push(currentRoll);
     console.log(cart);
 }
 
