@@ -144,13 +144,10 @@ class Roll {
         this.size = packSize;
         this.basePrice = basePrice;
     }
-    var currentRoll = {type: this.type, glazing: this.glazing, size: this.size, basePrice: this.baseprice}
 }
 
-
-
-
 function addToCart() {
+    var currentRoll = {type: this.type, glazing: this.glazing, size: this.size, basePrice: this.baseprice}
     console.log(currentRoll);
     cart.append(currentRoll);
     console.log(cart);
