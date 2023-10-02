@@ -34,133 +34,133 @@ class Roll {
     }
 }
 
-const cart = [];
+// const cart = [];
 
-//roll
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const rollType = params.get('roll');
+// //roll
+// const queryString = window.location.search;
+// const params = new URLSearchParams(queryString);
+// const rollType = params.get('roll');
 
-// rollcheck -> console.log(rollType);
+// // rollcheck -> console.log(rollType);
 
-//header
-const headerElement = document.querySelector('#roll-header-text');
-headerElement.innerText = rollType + ' Cinnamon Roll';
+// //header
+// const headerElement = document.querySelector('#roll-header-text');
+// headerElement.innerText = rollType + ' Cinnamon Roll';
 
-// headcheck -> console.log(rollType + ' Cinnamon Roll');
+// // headcheck -> console.log(rollType + ' Cinnamon Roll');
 
-//img
-const rollImage = document.querySelector('#roll-img');
-rollImage.src = rolls[rollType]["imageFile"];
+// //img
+// const rollImage = document.querySelector('#roll-img');
+// rollImage.src = rolls[rollType]["imageFile"];
 
-//price
-var rollPrice = document.querySelector('#roll-price');
-rollPrice.innerText = rolls[rollType]["basePrice"];
+// //price
+// var rollPrice = document.querySelector('#roll-price');
+// rollPrice.innerText = rolls[rollType]["basePrice"];
 
-//pricecheck console.log(rolls[rollType]["basePrice"]);
-
-
+// //pricecheck console.log(rolls[rollType]["basePrice"]);
 
 
-var basePrice = rolls[rollType]["basePrice"];
-var gPrice = 0.00;
-var pPrice = 1.00;
-var glazeType = 'Keep original';
-var packSize = '1';
 
-let allGlazes = [
-    {
-        type: 'Keep original',
-        price: 0.00,
-    },
-    {
-        type: 'Sugar milk',
-        price: 0.00,
-    },
-    {
-        type: 'Vanilla milk',
-        price: 0.50,
-    },
-    {
-        type: 'Double chocolate',
-        price: 1.50,
-    },
-];
 
-let glazeSelect = document.getElementById("glaze-select");
+// var basePrice = rolls[rollType]["basePrice"];
+// var gPrice = 0.00;
+// var pPrice = 1.00;
+// var glazeType = 'Keep original';
+// var packSize = '1';
 
-for (var i = 0; i < allGlazes.length; i++){
-    let gOption = document.createElement('option');
-    gOption.text = allGlazes[i].type;
-    gOption.value = allGlazes[i].price;
-    glazeSelect.add(gOption);
-}
+// let allGlazes = [
+//     {
+//         type: 'Keep original',
+//         price: 0.00,
+//     },
+//     {
+//         type: 'Sugar milk',
+//         price: 0.00,
+//     },
+//     {
+//         type: 'Vanilla milk',
+//         price: 0.50,
+//     },
+//     {
+//         type: 'Double chocolate',
+//         price: 1.50,
+//     },
+// ];
 
-let allPacks = [
-    {
-        size: '1',
-        price: 1,
-    },
-    {
-        size: '3',
-        price: 3,
-    },
-    {
-        size: '6',
-        price: 5,
-    },
-    {
-        size: '12',
-        price: 10,
-    },
-];
+// let glazeSelect = document.getElementById("glaze-select");
 
-let packSelect = document.getElementById("pack-select");
+// for (var i = 0; i < allGlazes.length; i++){
+//     let gOption = document.createElement('option');
+//     gOption.text = allGlazes[i].type;
+//     gOption.value = allGlazes[i].price;
+//     glazeSelect.add(gOption);
+// }
 
-for (var j = 0; j < allPacks.length; j++){
-    let pOption = document.createElement('option');
-    pOption.text = allPacks[j].size;
-    pOption.value = allPacks[j].price;
-    packSelect.add(pOption);
-}
+// let allPacks = [
+//     {
+//         size: '1',
+//         price: 1,
+//     },
+//     {
+//         size: '3',
+//         price: 3,
+//     },
+//     {
+//         size: '6',
+//         price: 5,
+//     },
+//     {
+//         size: '12',
+//         price: 10,
+//     },
+// ];
 
-function updatePrice() {
-    /* PRICE CHECKS
-    console.log(parseFloat(basePrice));
-    console.log(parseFloat(gPrice));
-    console.log(parseInt(pPrice));*/
+// let packSelect = document.getElementById("pack-select");
 
-    var finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
-    //FINAL CHECK console.log(finalPrice);
-    rollPrice.innerText = Math.round(100 * finalPrice) / 100;
-}
+// for (var j = 0; j < allPacks.length; j++){
+//     let pOption = document.createElement('option');
+//     pOption.text = allPacks[j].size;
+//     pOption.value = allPacks[j].price;
+//     packSelect.add(pOption);
+// }
 
-var currentRoll = new Roll(rollType, glazeType, packSize, basePrice);
+// function updatePrice() {
+//     /* PRICE CHECKS
+//     console.log(parseFloat(basePrice));
+//     console.log(parseFloat(gPrice));
+//     console.log(parseInt(pPrice));*/
 
-function glazingChange(element) {
-    gPrice = element.value;
-    glazeType = element.text;
-    console.log(glazeType);
-    console.log(currentRoll.glazing);
-    currentRoll.glazing = glazeType;
-    console.log(currentRoll.glazing);
-    updatePrice();
-}
+//     var finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
+//     //FINAL CHECK console.log(finalPrice);
+//     rollPrice.innerText = Math.round(100 * finalPrice) / 100;
+// }
 
-function packChange(element) {
-    pPrice = element.value;
-    packSize = element.text;
-    console.log(size);
-    console.log(currentRoll.size);
-    currentRoll.size = packSize;
-    console.log(currentRoll.size);
-    updatePrice();
-}
+// var currentRoll = new Roll(rollType, glazeType, packSize, basePrice);
 
-function addToCart() {
-    console.log(currentRoll);
-    cart.push(currentRoll);
-    console.log(cart);
-}
+// function glazingChange(element) {
+//     gPrice = element.value;
+//     glazeType = element.text;
+//     console.log(glazeType);
+//     console.log(currentRoll.glazing);
+//     currentRoll.glazing = glazeType;
+//     console.log(currentRoll.glazing);
+//     updatePrice();
+// }
 
-document.getElementById("cartBtn").addEventListener("click", addToCart);
+// function packChange(element) {
+//     pPrice = element.value;
+//     packSize = element.text;
+//     console.log(packSize);
+//     console.log(currentRoll.size);
+//     currentRoll.size = packSize;
+//     console.log(currentRoll.size);
+//     updatePrice();
+// }
+
+// function addToCart() {
+//     console.log(currentRoll);
+//     cart.push(currentRoll);
+//     console.log(cart);
+// }
+
+// document.getElementById("cartBtn").addEventListener("click", addToCart);

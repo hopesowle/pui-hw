@@ -132,7 +132,7 @@ function packChange(element) {
     packSize = element.text;
 
     //check prior
-    console.log(size);
+    console.log(packSize);
     console.log(currentRoll.size);
 
     currentRoll.size = packSize;
