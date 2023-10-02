@@ -127,11 +127,13 @@ function updatePrice() {
 function glazingChange(element) {
     gPrice = element.value;
     updatePrice();
+    addToCart();
 }
 
 function packChange(element) {
     pPrice = element.value;
     updatePrice();
+    addToCart();
 }
 
 
