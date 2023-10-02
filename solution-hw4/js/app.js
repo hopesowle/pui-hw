@@ -1,5 +1,3 @@
-import rolls from './rollsData';
-
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
         this.type = rollType;
@@ -125,7 +123,7 @@ function glazingChange(element) {
 
     //check change
     console.log(currentRoll.glazing);
-    
+
     updatePrice();
 }
 

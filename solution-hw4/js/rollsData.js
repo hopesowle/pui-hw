@@ -1,4 +1,4 @@
-export const rolls = {
+const rolls = {
     "Original": {
         "basePrice": 2.49,
         "imageFile": "../assets/products/original-cinnamon-roll.jpg"
