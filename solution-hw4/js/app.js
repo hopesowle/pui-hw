@@ -112,19 +112,19 @@ function updatePrice() {
 var currentRoll = new Roll(rollType, glazeType, packSize, basePrice);
 
 function glazingChange(element) {
-    console.log("printing the element:")
-    console.log(element);
+    //console.log("printing the element:")
+    //console.log(element);
     gPrice = element.value;
     glazeType = element.options[element.selectedIndex].text;
 
     //check prior
-    console.log(glazeType);
-    console.log(currentRoll.glazing);
+    //console.log(glazeType);
+    //console.log(currentRoll.glazing);
 
     currentRoll.glazing = glazeType;
 
     //check change
-    console.log(currentRoll.glazing);
+    //console.log(currentRoll.glazing);
 
     updatePrice();
 }
@@ -134,19 +134,19 @@ function packChange(element) {
     packSize = element.options[element.selectedIndex].text;
 
     //check prior
-    console.log(packSize);
-    console.log(currentRoll.size);
+    //console.log(packSize);
+    //console.log(currentRoll.size);
 
     currentRoll.size = packSize;
 
     //check change
-    console.log(currentRoll.size);
+    //console.log(currentRoll.size);
 
     updatePrice();
 }
 
 function addToCart() {
-    console.log(currentRoll);
+    //console.log(currentRoll);
     cart.push(currentRoll);
     console.log(cart);
 }
