@@ -125,6 +125,10 @@ a:hover {
     background-color:white;
 }
 
+img{
+    border: 2px solid black;
+}
+
 .products, .cart{
     text-transform: uppercase;
     border: none;
