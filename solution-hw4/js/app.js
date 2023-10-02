@@ -1,8 +1,48 @@
-var price = document.getElementById('roll-price');
-var basePrice = price;
+import rolls from './rollsData';
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+const cart = [];
+
+//roll
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get('roll');
+
+// rollcheck -> console.log(rollType);
+
+//header
+const headerElement = document.querySelector('#roll-header-text');
+headerElement.innerText = rollType + ' Cinnamon Roll';
+
+// headcheck -> console.log(rollType + ' Cinnamon Roll');
+
+//img
+const rollImage = document.querySelector('#roll-img');
+rollImage.src = rolls[rollType]["imageFile"];
+
+//price
+var rollPrice = document.querySelector('#roll-price');
+rollPrice.innerText = rolls[rollType]["basePrice"];
+
+//pricecheck console.log(rolls[rollType]["basePrice"]);
+
+
+
+//pack and glaze changes
+
+var basePrice = rolls[rollType]["basePrice"];
 var gPrice = 0.00;
 var pPrice = 1.00;
-price.innerText = basePrice + " ";
+var glazeType = 'Keep original';
+var packSize = '1';
 
 let allGlazes = [
     {
@@ -61,16 +101,54 @@ for (var j = 0; j < allPacks.length; j++){
 }
 
 function updatePrice() {
+    /* PRICE CHECKS
+    console.log(parseFloat(basePrice));
+    console.log(parseFloat(gPrice));
+    console.log(parseInt(pPrice)); */
+
     var finalPrice = (parseFloat(basePrice) + parseFloat(gPrice)) * parseInt(pPrice);
-    price.innerText = Math.round(100 * finalPrice) / 100;
+    //FINAL CHECK console.log(finalPrice);
+    rollPrice.innerText = Math.round(100 * finalPrice) / 100;
 }
+
+var currentRoll = new Roll(rollType, glazeType, packSize, basePrice);
 
 function glazingChange(element) {
     gPrice = element.value;
+    glazeType = element.text;
+
+    //check prior
+    console.log(glazeType);
+    console.log(currentRoll.glazing);
+
+    currentRoll.glazing = glazeType;
+
+    //check change
+    console.log(currentRoll.glazing);
+    
     updatePrice();
 }
 
 function packChange(element) {
     pPrice = element.value;
+    packSize = element.text;
+
+    //check prior
+    console.log(size);
+    console.log(currentRoll.size);
+
+    currentRoll.size = packSize;
+
+    //check change
+    console.log(currentRoll.size);
+
     updatePrice();
 }
+
+function addToCart() {
+    console.log(currentRoll);
+    cart.push(currentRoll);
+    console.log(cart);
+}
+
+document.getElementById("cartBtn").addEventListener("click", addToCart);
