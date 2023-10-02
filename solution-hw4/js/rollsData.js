@@ -65,8 +65,8 @@ rollPrice.innerText = rolls[rollType]["basePrice"];
 var basePrice = rolls[rollType]["basePrice"];
 var gPrice = 0.00;
 var pPrice = 1.00;
-var glaze = 'Keep original';
-var size = 1;
+var glazeType = 'Keep original';
+var packSize = '1';
 
 let allGlazes = [
     {
@@ -135,24 +135,24 @@ function updatePrice() {
     rollPrice.innerText = Math.round(100 * finalPrice) / 100;
 }
 
-var currentRoll = new Roll(rollType, glaze, size, basePrice);
+var currentRoll = new Roll(rollType, glazeType, packSize, basePrice);
 
 function glazingChange(element) {
     gPrice = element.value;
-    glaze = element.text;
-    console.log(glaze);
+    glazeType = element.text;
+    console.log(glazeType);
     console.log(currentRoll.glazing);
-    currentRoll.glazing = glaze;
+    currentRoll.glazing = glazeType;
     console.log(currentRoll.glazing);
     updatePrice();
 }
 
 function packChange(element) {
     pPrice = element.value;
-    size = element.text;
+    packSize = element.text;
     console.log(size);
     console.log(currentRoll.size);
-    currentRoll.size = size;
+    currentRoll.size = packSize;
     console.log(currentRoll.size);
     updatePrice();
 }
