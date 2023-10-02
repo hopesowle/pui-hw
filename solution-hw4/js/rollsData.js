@@ -146,8 +146,12 @@ class Roll {
     }
 }
 
+var currentRoll = {type: this.type, glazing: this.glazing, size: this.size, basePrice: this.baseprice}
+
+
 function addToCart() {
-    cart.append({type: this.type, glazing: this.glazing, size: this.size, basePrice: this.basePrice});
+    console.log(currentRoll);
+    cart.append(currentRoll);
     console.log(cart);
 }
 
