@@ -144,11 +144,8 @@ class Roll {
     }
 }
 
-
-const roll = new Roll(this.type, this.glazing, this.size, this.basePrice);
-
 function addToCart() {
-    cart.append(roll);
+    cart.push({type: this.type, glazing: this.glazing, size: this.size, basePrice: this.basePrice});
     console.log(cart);
 }
 
