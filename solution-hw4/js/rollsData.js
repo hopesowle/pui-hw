@@ -25,7 +25,7 @@ const rolls = {
     }    
 };
 
-const cart = {};
+var cart = {};
 
 //roll
 const queryString = window.location.search;
@@ -147,7 +147,7 @@ class Roll {
 }
 
 function addToCart() {
-    cart.push({type: this.type, glazing: this.glazing, size: this.size, basePrice: this.basePrice});
+    cart.append({type: this.type, glazing: this.glazing, size: this.size, basePrice: this.basePrice});
     console.log(cart);
 }
 
