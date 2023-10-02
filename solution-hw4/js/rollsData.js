@@ -65,8 +65,8 @@ rollPrice.innerText = rolls[rollType]["basePrice"];
 var basePrice = rolls[rollType]["basePrice"];
 var gPrice = 0.00;
 var pPrice = 1.00;
-var glaze = '';
-var size = 0;
+var glaze = 'Keep original';
+var size = 1;
 
 let allGlazes = [
     {
