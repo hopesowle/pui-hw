@@ -25,6 +25,15 @@ const rolls = {
     }    
 };
 
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
 var cart = {};
 
 //roll
@@ -136,18 +145,8 @@ function packChange(element) {
     addToCart();
 }
 
-
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
-
+var currentRoll = {type: rollType, glazing: glazeSelect, size: packSelect, basePrice: basePrice}
 function addToCart() {
-    var currentRoll = {type: this.type, glazing: this.glazing, size: this.size, basePrice: this.baseprice}
     console.log(currentRoll);
     cart.append(currentRoll);
     console.log(cart);
