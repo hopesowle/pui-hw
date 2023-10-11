@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    margin: 0px;
+    padding: 0px;
+    min-width: 1200px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+#container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+
+.rowone, .rowtwo, header {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.detail-description, .glazing, .pack{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.boxone, .boxtwo, .boxthree {
+    margin: auto;
+}
+
+
+.logo{
+    height: 285px;
+    float: left;
+    margin-top: -30px;
+}
+
+.page-header{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 0px;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+nav {
+    margin-left: 450px;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin: 40px;
+    text-align: right;
+    float: right;
+}
+
+hr {
+    margin-right: -16px;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+a:hover {
+    background-color: yellow;
+    /* font-weight: 900; */
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    border: 0px;
+    text-align: left;
+    display:block
+}
+
+.logo:hover {
+    background-color:white;
+    font-weight:initial;
+}
+
+.prod{
+    border: 2px solid black;
+}
+
+.prod:hover{
+    background-color:white;
+}
+
+.detailimg{
+    border: 4px solid black;
+}
+
+
+h1 {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 0px;
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'roboto';
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: 'roboto';
+    font-weight: lighter;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'roboto';
+    font-weight: lighter;
+    margin: 0px;
+}
+
+.checkprice{
+    text-decoration: none;
+    margin-left: 688px;
+    display: flex;
+}
+
+h4 {
+    font-size: 14px;
+    font-family: 'roboto';
+    font-weight: bold;
+    display: inline;
+}
+
+h5 {
+    font-size: 24px;
+    text-decoration: bold;
+    text-decoration: underline;
+    text-align: left;
+    margin-top: -30px;
+    margin-left: 250px;
+}
+
+h6 {
+    text-decoration:none;
+    margin: 0px;
+    font-weight: lighter;
+}
+
+.button {
+    border: 1px solid black;
+    padding: 15px 40px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+
+.roll {
+    display: flex;
+    width: 100%;
+}
+
+.roll-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+#roll-list, #checkout{
+    margin-left: 325px;
+    width: 1200px - 325px;
+    justify-content: space-between;
+}
+
+.products, .cart{
+    margin-top: -25px;
+    margin-bottom: -50px;
+    float: right;
+}
+
+.roll-img {
+    border: 2px solid black;
+}
+
+.roll-main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.roll-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.roll.expanded {
+    display: block;
+}
+
+.roll-middle{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    margin-left: -100px;
+}
+
+.roll-type, .roll-glaze, .roll-pack{
+    margin-bottom: 25px;
+}
+
+.roll-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-around;
+}
+
+.roll-remove{
+    margin-left: -250px;
+    margin-bottom: -20px;
+}
+
+.roll-calculated-price {
+    float: right;
+    margin-right: 80px;
+}
+
+.cart-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    margin-right: -80px;
+    margin-left: 180px; 
+}
+
+.cart-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
