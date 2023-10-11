@@ -135,7 +135,7 @@ function subtractCartTotal(roll) {
 
     const cartTotalElement = document.querySelector('.cart-price');
     cartTotal -= calculatedPrice;
-    cartTotalElement.innerText = "$ " + Math.abs(cartTotal.toFixed(2));
+    cartTotalElement.innerText = "$ " + Math.abs(cartTotal).toFixed(2);
 }
 
 function deleteRoll(roll) {
