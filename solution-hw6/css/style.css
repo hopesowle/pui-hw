@@ -24,6 +24,9 @@ a {
     margin: 0px auto;
 }
 
+#roll-container{
+    margin-left: 50px;
+}
 
 .rowone, .rowtwo, header {
     display: flex;
@@ -48,6 +51,10 @@ a {
 .detail-description, .glazing, .pack{
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.price-cart {
     margin-left: 50px;
 }
 
