@@ -172,4 +172,16 @@ function submitRoll(){
     saveToLocalStorage();
 }
 
+function retrieveFromLocalStorage() {
+    const cartArrStr = localStorage.getItem('storedCart');
+    const cartArr = JSON.parse(cartArrStr);
+    for (const rollData of cartArr) {
+        const roll = addNewRoll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
+        createElement(roll);
+    }
+}
+
+if (localStorage.getItem('storedCart') != null) {
+    retrieveFromLocalStorage();
+}
 
