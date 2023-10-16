@@ -167,24 +167,6 @@ function deleteRoll(roll) {
     saveToLocalStorage();
 }
 
-function submitRoll(){
-    const rollType = document.querySelector('#roll-header-text');
-    const rollTypeText = rollType.value;
-
-    const rollGlaze = document.querySelector('#glaze-select');
-    const rollGlazeText = rollGlaze.value;
-
-    const rollPack = document.querySelector('#pack-select');
-    const rollPackText = rollPack.value;
-
-    const rollPrice = document.querySelector('#roll-price');
-    const rollPriceText = rollPrice.value;
-
-    const roll = addNewNote(rollTypeText, rollGlazeText, rollPackText, rollPriceText);
-
-    saveToLocalStorage();
-}
-
 function saveToLocalStorage() {
     const cartArr = Array.from(cart);
     //CHECK: print array
