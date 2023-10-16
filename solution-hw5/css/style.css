@@ -24,6 +24,9 @@ a {
     margin: 0px auto;
 }
 
+#detail-body {
+    margin-left: 50px;
+}
 
 .rowone, .rowtwo, header {
     display: flex;
