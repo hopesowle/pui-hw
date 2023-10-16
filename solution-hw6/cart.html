@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+    <title>Cart</title>
+    <script defer src="js/rollsData.js"></script>
+    <script defer src="js/cart.js"></script>
+  </head>
+  
+  <body>
+    <div id = "container">
+      <header>
+        <a href = "index.html" class = "logo">
+          <img src = "../assets/logo/logo-01.svg" height = "400px" width = "400px"/>
+        </a>
+          <div>
+            <div class="rowone">
+              <nav>
+                <ul>
+                  <li><a href = "index.html" class = "products"> PRODUCTS</a></li>
+                  <li><a href = "cart.html" class = "cart"> CART </a></li>
+                </ul>
+              </nav>
+            </div>
+          
+          <hr>
+    
+          <div class="page-header">
+            Our hand-made cinnamon rolls
+          </div>
+        </div>
+      </header>
+
+      <div id = "roll-list">
+
+        <template id = "roll-template">
+
+          <div class = "roll expanded">
+
+            <div class = "roll-top">
+              <div class = "roll-left">
+                <div class = "roll-image-content">
+                  <img id = "cart-img" class = "roll-img" src = "" height = "285px" width = "285px" />
+                </div>
+              </div> <!-- END roll-left -->
+
+              <div class = "roll-middle">
+                <div class = "roll-main-content">
+                  <div class ="roll-text">
+                    <div class ="roll-type">
+                      placeholder type
+                    </div>
+                    <div class = "roll-glaze">
+                      placeholder glaze
+                    </div>
+                    <div class = "roll-pack">
+                      placeholder pack
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- END roll-middle -->
+                  
+              <div class = "roll-right">
+                <div class="roll-calculated-price">
+                  placeholder price
+                </div>
+              </div> <!-- END roll-right -->
+            </div> <!-- END roll-top -->
+            <div class = "roll-bottom">
+              <div class= "roll-remove">
+                <h5>Remove</h5>
+              </div>
+            </div> <!-- END roll-bottom -->
+          </div> <!-- END roll -->
+        </template> <!-- END roll template -->
+
+      </div> <!-- END roll-list -->
+    </div> <!-- END container -->
+
+
+
+    <div id = "checkout">
+      <hr>
+      <div class = "cart-top">
+        <div class = "cart-total">
+          Total
+        </div>
+        <div class = "cart-price">
+          placeholder total
+        </div>
+      </div> <!-- END cart-left -->
+
+      <div class = "cart-bottom">
+        
+        <div class = "cart-checkoutbtn">
+          <a class=button> Checkout </a>
+        </div>
+      </div> <!-- END cart-right -->
+    </div>
+  </body>
+</html>
+      
