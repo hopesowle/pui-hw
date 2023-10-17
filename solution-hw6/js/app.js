@@ -176,11 +176,11 @@ function submitRoll(){
 function saveToLocalStorage() {
     const cartArr = Array.from(cart);
     //CHECK: print array
-    console.log(cartArr);
+    //console.log(cartArr);
 
     const cartArrStr = JSON.stringify(cartArr);
     //CHECK: print string array
-    console.log(cartArrStr);
+    //console.log(cartArrStr);
 
     localStorage.setItem('storedCart', cartArrStr);
     console.log(localStorage);
