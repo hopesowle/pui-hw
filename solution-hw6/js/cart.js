@@ -168,16 +168,12 @@ function deleteRoll(roll) {
 }
 
 function saveToLocalStorage() {
-    console.log(cart);
     const cartArr = Array.from(cart);
-    //CHECK: print array
-    console.log(cartArr);
 
     const cartArrStr = JSON.stringify(cartArr);
-    //CHECK: print string array
-    console.log(cartArrStr);
 
     localStorage.setItem('storedCart', cartArrStr);
+    console.log(localStorage);
 }
 
 function retrieveFromLocalStorage() {
