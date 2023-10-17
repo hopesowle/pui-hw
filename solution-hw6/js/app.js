@@ -196,6 +196,29 @@ function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     return roll;
 }
 
+function createElement(roll) {
+    //make a clone of the roll template
+    const template = document.querySelector('#roll-template');
+    const clone = template.content.cloneNode(true);
+    
+    //connect this clone to our roll.element
+    //now we only need to refer to roll.element
+    roll.element = clone.querySelector('.roll');
+
+    const btnDelete = roll.element.querySelector('.roll-remove');
+    btnDelete.addEventListener('click', () => {
+        deleteRoll(roll);
+    });
+
+    //add roll clone to DOM
+    //find roll parent (#roll-lost) and add roll as its child
+    const rollListElement = document.querySelector('#roll-list');
+    rollListElement.append(roll.element);
+
+    //populate roll clone w/ actual roll content
+    updateElement(roll);
+}
+
 function retrieveFromLocalStorage() {
     const cartArrStr = localStorage.getItem('storedCart');
     const cartArr = JSON.parse(cartArrStr);
