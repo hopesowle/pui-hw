@@ -183,6 +183,7 @@ function saveToLocalStorage() {
     console.log(cartArrStr);
 
     localStorage.setItem('storedCart', cartArrStr);
+    console.log(localStorage);
 }
 
 function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
