@@ -173,7 +173,11 @@ function saveToLocalStorage() {
     const cartArrStr = JSON.stringify(cartArr);
 
     localStorage.setItem('storedCart', cartArrStr);
+    
+    //Print stored cart
     console.log(localStorage);
+    //CHECK: print array
+    console.log(cartArr);
 }
 
 function retrieveFromLocalStorage() {
