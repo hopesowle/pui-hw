@@ -7,7 +7,8 @@ class Roll {
     }
 }
 
-const cart = [];
+//create an empty Set, which will hold all roll objects
+const cart = new Set();
 
 //roll
 const queryString = window.location.search;
@@ -147,7 +148,7 @@ function packChange(element) {
 
 function addToCart() {
     //console.log(currentRoll);
-    cart.push(currentRoll);
+    cart.add(currentRoll);
     console.log(cart);
     saveToLocalStorage();
 }
