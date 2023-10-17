@@ -185,6 +185,17 @@ function saveToLocalStorage() {
     localStorage.setItem('storedCart', cartArrStr);
 }
 
+function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
+    //create a new roll object using constructor args: 
+    //roll type, glazing, pack size, and base price
+    const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
+    
+    //add roll object to roll set
+    cart.add(roll);
+    
+    return roll;
+}
+
 function retrieveFromLocalStorage() {
     const cartArrStr = localStorage.getItem('storedCart');
     const cartArr = JSON.parse(cartArrStr);
