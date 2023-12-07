@@ -43,7 +43,6 @@ var swiper = new Swiper(".mySwiper", {
 
   openNavBtn.addEventListener('click', openNav);
 
-
   const closeNav = () => {
     nav.style.display = 'none';
     openNavBtn.style.display = 'inline-block';

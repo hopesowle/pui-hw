@@ -20,18 +20,11 @@ body {
     line-height: 1.5;
 }
 
-h1, h2 {
+h1 {
     line-height: 1.1;
     font-weight: 400;
-}
-
-h1 {
     font-size: 65px;
     color: white;
-}
-
-h2 {
-    font-size: 65px;
 }
 
 a {
@@ -457,3 +450,4 @@ footer {
 
 
 }
+
