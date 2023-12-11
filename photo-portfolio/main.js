@@ -1,17 +1,5 @@
-
-
-// CONTACT BUTTONS (circular text buttons)
-const textButtons = document.querySelectorAll('.contact__btn');
-
-textButtons.forEach(textButton => {
-    let text = textButton.querySelector('p');
-
-    text.innerHTML = text.innerHTML.split('').map((character, index) => `<span style="transform: rotate(${index * 12}deg)">${character}</span>`).join('')
-})
-
-
 // SWIPER JS (gallery section)
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swipe", {
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
@@ -19,11 +7,11 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
     breakpoints: {
-        599: {
+        600: {
             slidesPerView: 2,
             spaceBetween: 40
         },
-        1023: {
+        1020: {
             slidesPerView: 3,
             spaceBetween: 60
         }
@@ -31,30 +19,30 @@ var swiper = new Swiper(".mySwiper", {
   });
 
   const nav = document.querySelector('.nav__links');
-  const openNavBtn = document.querySelector('#nav__toggle-open');
-  const closeNavBtn = document.querySelector('#nav__toggle-close');
+  const navBtnOpen = document.querySelector('#nav__btn-open');
+  const navBtnClose = document.querySelector('#nav__btn-close');
 
 
-  const openNav = () => {
+  const navOpen = () => {
     nav.style.display = 'flex';
-    openNavBtn.style.display = 'none';
-    closeNavBtn.style.display = 'inline-block';
+    navBtnOpen.style.display = 'none';
+    navBtnClose.style.display = 'inline-block';
   }
 
-  openNavBtn.addEventListener('click', openNav);
+  navBtnOpen.addEventListener('click', navOpen);
 
-  const closeNav = () => {
+  const navClose = () => {
     nav.style.display = 'none';
-    openNavBtn.style.display = 'inline-block';
-    closeNavBtn.style.display = 'none';
+    navBtnOpen.style.display = 'inline-block';
+    navBtnClose.style.display = 'none';
   }
 
-  closeNavBtn.addEventListener('click', closeNav);
+  navBtnClose.addEventListener('click', navClose);
 
   // close nav menu on click of menu link
-  if(document.body.clientWidth < 1024) {
+  if(document.body.clientWidth < 1000) {
     nav.querySelectorAll('li a').forEach(navLink => {
-      navLink.addEventListener('click', closeNav);
+      navLink.addEventListener('click', navClose);
     })
   }
   
